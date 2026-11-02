@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             PokedexTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Pokedex()
+                    Pokedex(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
